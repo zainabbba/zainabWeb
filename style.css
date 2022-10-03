@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    background-color: white;
+    color: black;
+
+
+}
+
+.container {
+    padding: 10px 10%;
+
+
+}
+
+
+
+.logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+
+    /* background-image: url('images/background.png');
+    background-size: cover;
+    background-position: right;  */
+
+
+}
+
+.social_media {
+    position: absolute;
+    left: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.social_media i {
+    color: #f1b5bb;
+}
+
+.social_media i:hover {
+    color: black;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 10px;
+
+}
+
+nav {
+    display: flex;
+flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+nav ul li a {
+    position: relative;
+}
+
+li a:hover {
+    color: #f1b5bb;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #f1b5bb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.headingtext {
+    width: 100%;
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.headingtext hr {
+    width: 50%;
+}
+
+.headingtext span {
+    color: #f1b5bb;
+}
+
+
+/* .............. about .............*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+}
+
+
+.aboutcol1 img {
+    width: 70%;
+}
+
+.aboutcol1 {
+    flex-basis: 35%;
+}
+
+.aboutcol2 {
+    flex-basis: 60%;
+}
+
+.aboutcol2 p {
+    margin-top: 20px;
+}
+
+.aboutcol2 .btn {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #f1b5bb;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #f1b5bb;
+
+    padding: 20px;
+
+    cursor: pointer;
+}
+
+
+/* .............. protifloi .............*/
+
+
+.protifloi {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.worklist {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+
+
+    gap: 50px;
+}
+
+.work {
+    position: relative;
+    height: 50vh;
+    width: 250%;
+
+
+}
+
+.work img {
+
+    width: 120%;
+    height: 100%;
+
+
+
+
+}
+
+
+
+
+.protifloi .text_heading {
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+
+
+
+.layer {
+
+    width: 45%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    position: absolute;
+    margin-left: 10%;
+
+    bottom: 50%;
+    height: 0;
+    /* margin: 10px 40px; */
+    /* overflow: hidden; */
+
+    /* padding: 0 40px; */
+    background-color: #f1b5bb;
+
+
+
+
+}
+
+
+
+.layer a {
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+
+}
+
+
+.layer h1 {
+    font-size: 20px;
+
+    margin-bottom: 30px;
+
+    font-weight: bolder;
+    width: 200px;
+
+
+
+}
+
+.layer p {
+    margin-bottom: 30px;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+    display: block;
+
+
+    width: 420px;
+}
+
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 115px;
+
+}
+
+.row2 .work {
+    width: 300px;
+}
+
+.work .btn {
+    background-color: #f1b5bb;
+    width: 100px;
+    padding: 10px 10px;
+    width: 100px;
+    margin-bottom: 50px;
+    color: white;
+
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 120%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(69, 68, 68, 0.5);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+.card-img-overlay {
+opacity: 5;
+}
+.card-text{
+    margin-top: 50%;
+    color: white;
+    margin-left: 10%;
+
+}
+
+.card-text p{
+
+margin-bottom: 10%;
+}
+
+
+/* .............. contact .............*/
+
+
+
+.col1contact {
+    flex-basis: 30%;
+
+
+
+}
+
+.col1contact p {
+    margin-top: 30px;
+}
+
+
+.col1contact2 {
+    flex-basis: 70%;
+}
+
+.col2contact img {
+    height: 70%;
+}
+
+form input,
+form textarea {
+    background-color: #f1b5bb;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #f1b5bb;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+form .btn {
+    margin-top: 10px;
+
+}
+
+.copyright {
+    margin-top: 40px;
+    /* width: 100%; */
+    background-color: #f1b5bb;
+    text-align: center;
+    height: 30%;
+    font-weight: 300px;
+    
+}
+
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container{
+        padding: 10px 0px;
+        margin: 5px 10px;
+
+    }
+    nav ul {
+        background-color: #f1b5bb;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -200px;
+
+
+        padding: 20px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul li {
+        margin-top: 25px;
+        display: flex;
+    }
+
+    nav ul li a:hover{
+        color: aliceblue;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .headingtext {
+        /* width: 50%; */
+        margin-top: 50%;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+
+ 
+    .copyright {
+
+
+       width: 100%;
+       margin: 5px 0%;
+        
+    }
+ 
+
+ 
+
+
+    .headingtext hr {
+        width: 70%;
+    }
+
+    .social_media {
+        position: absolute;
+        left: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+
+
+
+
+    .work img {
+
+        width: 50%;
+        height: 100%;
+
+        margin: 10px 40px;
+
+
+    }
+
+    .worklist {
+        display: flex;
+        flex-direction: column;
+
+        
+
+
+    }
+
+    .row1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+ 
+.work{
+    width: 150%;
+    margin: 5px 5%;
+
+
+}
+
+.row2 .work{
+    width: 150%;
+
+
+}
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 10px 40px;
+        height: 101%;
+        width: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(69, 68, 68, 0.5);
+    
+        z-index: 1;
+      }
+    
+    .card-img-overlay {
+    opacity: 5;
+    }
+
+    #txtp {
+        position: relative;
+    }
+
+    .fa-paper-plane {
+        position: absolute;
+        right: 105%;
+
+        bottom: 10%;
+
+    }
+
+    .aboutcol1 img {
+        width: 80%;
+        margin-top: 70px;
+    }
+
+    .contact  {
+        margin-bottom: 0%;
+        text-align: center;
+        
+    }
+
+    .contact .btn {
+        width: 60%;
+        margin-left: 10%;
+        
+
+    }
+
+    .contact{
+        margin: 5px 10%;
+    }
+
+}
