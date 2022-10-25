@@ -1,13 +1,13 @@
-let sidemenu=document.getElementsByClassName('sidemenu')[0]
+let sidemenu = document.getElementsByClassName('sidemenu')[0]
 
 
-function openmenu(){
-    sidemenu.style.right='0'
-    console.log('hello');
+function openmenu() {
+  sidemenu.style.right = '0'
+  console.log('hello');
 }
 
-function closemenu(){
-    sidemenu.style.right='-200px'
+function closemenu() {
+  sidemenu.style.right = '-200px'
 }
 
 
@@ -33,20 +33,20 @@ function reveal() {
 }
 
 function revealheading() {
-    let reavealheading=document.querySelector('.reavealheading')
-  
+  let reavealheading = document.querySelector('.reavealheading')
 
-      var windowHeight = window.innerHeight;
-      var elementTop = reavealheading.getBoundingClientRect().top;
-      var elementVisible =150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reavealheading.classList.add("active");
-      } else {
-        reavealheading.classList.remove("active");
-      }
-    }
-  
+
+  var windowHeight = window.innerHeight;
+  var elementTop = reavealheading.getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    reavealheading.classList.add("active");
+  } else {
+    reavealheading.classList.remove("active");
+  }
+}
+
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", revealheading);
 

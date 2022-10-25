@@ -66,7 +66,7 @@ nav ul li {
 
 nav {
     display: flex;
-flex-direction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -172,14 +172,16 @@ nav ul a {
     margin-bottom: 5%;
 }
 
+
 .worklist {
     display: flex;
     flex-direction: column;
     /* align-items: center;
     justify-content: center; */
+    margin-right: 10%;
+    /* margin-left: 10%; */
 
-
-    gap: 50px;
+    gap: 20px;
 }
 
 .work {
@@ -192,8 +194,8 @@ nav ul a {
 
 .work img {
 
-    width: 120%;
-    height: 100%;
+    width: 160%;
+    height: 80%;
 
 
 
@@ -206,7 +208,7 @@ nav ul a {
 .protifloi .text_heading {
     margin-bottom: 5%;
     text-align: center;
-    
+
 }
 
 
@@ -219,7 +221,7 @@ nav ul a {
     justify-content: center; */
     flex-direction: column;
     position: absolute;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 
     bottom: 50%;
     height: 0;
@@ -274,13 +276,13 @@ nav ul a {
 .row1 {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 15%;
 }
 
 .row2 {
     display: flex;
     flex-direction: row;
-    gap: 115px;
+    gap: 15%;
 
 }
 
@@ -297,34 +299,36 @@ nav ul a {
     color: white;
 
 }
+
 .card-img-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 120%;
+
+    width: 160%;
+    height: 80%;
     opacity: 5;
     transition: .5s ease;
     background: rgba(69, 68, 68, 0.5);
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /* .card-img-overlay {
 opacity: 5;
 } */
-.card-text{
-    margin-top: 50%;
+.card-text {
+    margin-top: 20%;
     color: white;
     margin-left: 10%;
 
 }
 
-.card-text p{
+.card-text p {
 
-margin-bottom: 10%;
+    margin-bottom: 10%;
 }
 
 
@@ -375,51 +379,58 @@ form .btn {
     text-align: center;
     height: 30%;
     font-weight: 300px;
-    
+
 }
 
 nav .fas {
     display: none;
 }
-.reavealheading{
+
+.reavealheading {
 
     transform: translateX(300px);
     opacity: 0;
     transition: 700ms ease;
 }
 
-.reavealheading.active{
+.reavealheading.active {
     transform: translateX(0);
     opacity: 1;
-  }
-.reveal{
+}
+
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 2s ease;
-    
-  }
-  .reveal.active{
+
+}
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
 @media only screen and (max-width:600px) {
-    html, body {
-        max-width: 100%;
+
+    html,
+    body {
+        max-width: 150%;
         overflow-x: hidden;
     }
-    .container{
+
+    .container {
         padding: 10px 0px;
         margin: 5px 10px;
 
     }
+
     nav ul {
         background-color: #f1b5bb;
         height: 100%;
         position: fixed;
         top: 0;
-        
+
         right: -200px;
 
 
@@ -436,9 +447,10 @@ nav .fas {
         display: flex;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: aliceblue;
     }
+
     nav ul .fas {
         position: absolute;
         top: 30px;
@@ -453,17 +465,17 @@ nav .fas {
         font-size: 18px;
     }
 
- 
+
     .copyright {
 
 
-       width: 100%;
-       margin: 5px 0%;
-        
-    }
- 
+        width: 100%;
+        margin: 5px 0%;
 
- 
+    }
+
+
+
 
 
     .headingtext hr {
@@ -488,10 +500,11 @@ nav .fas {
 
     .work img {
 
-        width: 50%;
+        width: 120%;
         height: 100%;
 
-        margin: 10px 40px;
+
+        padding: 10px 10%;
 
 
     }
@@ -499,56 +512,57 @@ nav .fas {
     .worklist {
         display: flex;
         flex-direction: column;
-
-        
-
+        margin-right: 45%;
 
     }
 
-    .row1{
+    .row1 {
         display: flex;
         flex-direction: column;
         gap: 20px;
 
     }
-    .row2{
+
+    .row2 {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
         gap: 20px;
     }
 
- 
-.work{
-    width: 150%;
-    margin: 5px 5%;
+
+    .work {
+        width: 150%;
+        margin: 5px 5%;
 
 
-}
+    }
 
-.row2 .work{
-    width: 150%;
+    .row2 .work {
+        width: 150%;
 
 
-}
+    }
+
     .card-img-overlay {
         position: absolute;
+
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        margin: 10px 40px;
-        height: 101%;
-        width: 50%;
+
+        width: 100%;
+        height: 100%;
         opacity: 0;
         transition: .5s ease;
         background: rgba(69, 68, 68, 0.5);
-    
+        margin: 2% 10%;
         z-index: 1;
-      }
-    
+    }
+
     .card-img-overlay {
-    opacity: 5;
+        opacity: 5;
     }
 
     #txtp {
@@ -568,21 +582,28 @@ nav .fas {
         margin-top: 70px;
     }
 
-    .contact  {
+    .contact {
         margin-bottom: 0%;
         text-align: center;
-        
+
     }
 
     .contact .btn {
         width: 60%;
         margin-left: 10%;
-        
+
 
     }
 
-    .contact{
+    .contact {
         margin: 5px 10%;
+    }
+
+    .card-text {
+        margin-top: 40%;
+        color: white;
+        margin-left: 5%;
+
     }
 
 }
