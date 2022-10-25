@@ -305,16 +305,16 @@ nav ul a {
     right: 0;
     height: 100%;
     width: 120%;
-    opacity: 0;
+    opacity: 5;
     transition: .5s ease;
     background: rgba(69, 68, 68, 0.5);
     margin-left: 0px;
     margin-right: 0px;
   }
 
-.card-img-overlay {
+/* .card-img-overlay {
 opacity: 5;
-}
+} */
 .card-text{
     margin-top: 50%;
     color: white;
@@ -381,6 +381,28 @@ form .btn {
 nav .fas {
     display: none;
 }
+.reavealheading{
+
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 700ms ease;
+}
+
+.reavealheading.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s ease;
+    
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
 @media only screen and (max-width:600px) {
     html, body {
@@ -397,6 +419,7 @@ nav .fas {
         height: 100%;
         position: fixed;
         top: 0;
+        
         right: -200px;
 
 
